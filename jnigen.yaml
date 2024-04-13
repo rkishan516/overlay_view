@@ -1,0 +1,22 @@
+android_sdk_config:
+  add_gradle_deps: true
+  android_example: 'example/'
+
+suspend_fun_to_async: true
+
+output:
+  c:
+    library_name: overlay_view
+    path: src/
+  dart:
+    path: lib/src/overlay_view.dart
+    structure: single_file
+
+log_level: all
+
+source_path:
+  - 'android/src/main/kotlin'
+
+classes:
+  - 'OverlayInterface'
+  - 'OverlayManager'
